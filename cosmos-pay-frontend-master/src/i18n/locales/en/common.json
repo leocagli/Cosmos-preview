@@ -1,0 +1,26 @@
+{
+  "api": {
+    "genericError": "Something went wrong",
+    "networkError": "Could not connect to the server."
+  },
+  "common": {
+    "loading": "Loading...",
+    "loadingCategories": "Loading categories...",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "back": "Back",
+    "continue": "Continue",
+    "search": "Search",
+    "new": "New",
+    "yes": "Yes",
+    "no": "No",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "optional": "optional",
+    "metaGoal": "goal",
+    "guest": "Guest",
+    "userFallback": "User",
+    "myAccount": "My account",
+    "account": "Account"
+  }
+}

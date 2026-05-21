@@ -1,0 +1,26 @@
+{
+  "api": {
+    "genericError": "Ha ocurrido un error",
+    "networkError": "No se pudo conectar al servidor."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "loadingCategories": "Cargando categorías...",
+    "close": "Cerrar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "back": "Volver",
+    "continue": "Continuar",
+    "search": "Buscar",
+    "new": "Nuevo",
+    "yes": "Sí",
+    "no": "No",
+    "errorGeneric": "Algo salió mal. Intentá de nuevo.",
+    "optional": "opcional",
+    "metaGoal": "meta",
+    "guest": "Invitado",
+    "userFallback": "Usuario",
+    "myAccount": "Mi cuenta",
+    "account": "Cuenta"
+  }
+}

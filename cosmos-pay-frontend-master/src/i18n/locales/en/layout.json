@@ -1,0 +1,93 @@
+{
+  "layout": {
+    "language": {
+      "label": "Language",
+      "short": "Lang",
+      "es": "Spanish (Mexico)",
+      "en": "English (US)"
+    },
+    "theme": {
+      "light": "Light mode",
+      "dark": "Dark mode"
+    },
+    "gatewayNav": {
+      "aria": "Main navigation",
+      "developers": "Developers",
+      "getStarted": "Get started"
+    },
+    "header": {
+      "homeAria": "Cosmos home",
+      "brandName": "Cosmos",
+      "brandAlt": "Cosmos - Home",
+      "breadcrumbHome": "Home",
+      "searchPlaceholder": "Find the product you’re looking for...",
+      "searchAria": "Search",
+      "searchNoResults": "No matching products.",
+      "searchSeeAll": "See all results in the shop",
+      "categories": "Categories",
+      "goToPanel": "Go to my dashboard",
+      "profileAria": "Profile",
+      "createAccount": "Create your account",
+      "login": "Log in",
+      "favoritesAria": "Favorites",
+      "cartAria": "Cart",
+      "notificationsAria": "Notifications",
+      "mobileSearchPlaceholder": "Search..."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "empty": "You’re all caught up.",
+      "markAllRead": "Mark all as read",
+      "loadError": "Could not load notifications.",
+      "markAllError": "Could not mark all as read.",
+      "justNow": "Now",
+      "minutesAgo": "{{n}} min",
+      "hoursAgo": "{{n}} h",
+      "viewPurchases": "View my purchases"
+    },
+    "footer": {
+      "tagline": "Equal opportunity to buy, sell, and produce.",
+      "us": "ABOUT US",
+      "platform": "PLATFORM",
+      "legal": "LEGAL",
+      "connect": "CONNECT",
+      "aboutCosmos": "About Cosmos",
+      "team": "Team",
+      "blog": "Blog",
+      "press": "Press",
+      "buy": "Shop",
+      "sell": "Sell",
+      "suppliers": "Suppliers",
+      "cosmosPay": "Cosmos Pay",
+      "cosmosFounding": "Cosmos Founding",
+      "howItWorks": "How it works",
+      "privacy": "Privacy",
+      "terms": "Terms of service",
+      "cookies": "Cookies",
+      "community": "Community",
+      "faq": "FAQ",
+      "rights": "© {{year}} Cosmos. All rights reserved."
+    },
+    "mobileNav": {
+      "mainAria": "Main navigation",
+      "homeAria": "Home",
+      "home": "Home",
+      "categoriesAria": "Categories",
+      "categories": "Categories",
+      "cartAria": "Cart",
+      "cart": "Cart",
+      "helpAria": "Help",
+      "help": "Help",
+      "moreAria": "More options",
+      "more": "More"
+    },
+    "nav": {
+      "buy": "Shop",
+      "sell": "Sell",
+      "howItWorks": "How it works",
+      "myWallet": "My wallet",
+      "etherfuseRamp": "Ramp",
+      "cosmosPay": "Cosmos Pay"
+    }
+  }
+}

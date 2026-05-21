@@ -1,0 +1,23 @@
+{
+  "sidebar": {
+    "breadcrumbAria": "Migas de pan",
+    "brandPanel": "Panel",
+    "navigation": "Navegación",
+    "closeMenu": "Cerrar menú",
+    "openSidebar": "Abrir sidebar",
+    "expandSidebar": "Expandir sidebar",
+    "collapseSidebar": "Colapsar sidebar",
+    "notifications": "Notificaciones",
+    "settings": "Ajustes",
+    "breadcrumb": {
+      "panel": "Panel",
+      "home": "Inicio",
+      "cosmosPayDev": "Cosmos Pay (devs)",
+      "cosmosPayOverview": "Resumen",
+      "cosmosPayKeys": "API Keys",
+      "cosmosPayLinks": "Links de pago",
+      "cosmosPayDocs": "Documentación",
+      "cosmosPayAccount": "Cuenta e identidades"
+    }
+  }
+}

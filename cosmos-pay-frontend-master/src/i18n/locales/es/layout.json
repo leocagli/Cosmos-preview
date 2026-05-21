@@ -1,0 +1,93 @@
+{
+  "layout": {
+    "language": {
+      "label": "Idioma",
+      "short": "Idioma",
+      "es": "Español (México)",
+      "en": "English (US)"
+    },
+    "theme": {
+      "light": "Tema claro",
+      "dark": "Tema oscuro"
+    },
+    "gatewayNav": {
+      "aria": "Navegación principal",
+      "developers": "Desarrolladores",
+      "getStarted": "Empezar"
+    },
+    "header": {
+      "homeAria": "Cosmos inicio",
+      "brandName": "Cosmos",
+      "brandAlt": "Cosmos - Inicio",
+      "breadcrumbHome": "Inicio",
+      "searchPlaceholder": "Encuentra el producto que estás buscando...",
+      "searchAria": "Buscar",
+      "searchNoResults": "No hay productos que coincidan.",
+      "searchSeeAll": "Ver todos los resultados en la tienda",
+      "categories": "Categorías",
+      "goToPanel": "Ir a mi panel",
+      "profileAria": "Perfil",
+      "createAccount": "Crea tu cuenta",
+      "login": "Iniciar sesión",
+      "favoritesAria": "Favoritos",
+      "cartAria": "Carrito",
+      "notificationsAria": "Notificaciones",
+      "mobileSearchPlaceholder": "Buscar..."
+    },
+    "notifications": {
+      "title": "Notificaciones",
+      "empty": "No tenés notificaciones por ahora.",
+      "markAllRead": "Marcar todas leídas",
+      "loadError": "No se pudieron cargar las notificaciones.",
+      "markAllError": "No se pudo marcar todo como leído.",
+      "justNow": "Ahora",
+      "minutesAgo": "{{n}} min",
+      "hoursAgo": "{{n}} h",
+      "viewPurchases": "Ver mis compras"
+    },
+    "footer": {
+      "tagline": "Igualdad de oportunidades para comprar, vender y producir.",
+      "us": "NOSOTROS",
+      "platform": "PLATAFORMA",
+      "legal": "LEGAL",
+      "connect": "CONECTAR",
+      "aboutCosmos": "Sobre Cosmos",
+      "team": "Equipo",
+      "blog": "Blog",
+      "press": "Prensa",
+      "buy": "Comprar",
+      "sell": "Vender",
+      "suppliers": "Proveedores",
+      "cosmosPay": "Cosmos Pay",
+      "cosmosFounding": "Cosmos Founding",
+      "howItWorks": "Cómo funciona",
+      "privacy": "Privacidad",
+      "terms": "Términos de servicio",
+      "cookies": "Cookies",
+      "community": "Comunidad",
+      "faq": "FAQ",
+      "rights": "© {{year}} Cosmos. Todos los derechos reservados."
+    },
+    "mobileNav": {
+      "mainAria": "Navegación principal",
+      "homeAria": "Inicio",
+      "home": "Inicio",
+      "categoriesAria": "Categorías",
+      "categories": "Categorías",
+      "cartAria": "Carrito",
+      "cart": "Carrito",
+      "helpAria": "Ayuda",
+      "help": "Ayuda",
+      "moreAria": "Más opciones",
+      "more": "Más"
+    },
+    "nav": {
+      "buy": "Comprar",
+      "sell": "Vender",
+      "howItWorks": "Cómo funciona",
+      "myWallet": "Mi wallet",
+      "etherfuseRamp": "Ramp",
+      "cosmosPay": "Cosmos Pay"
+    }
+  }
+}

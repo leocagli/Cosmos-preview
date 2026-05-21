@@ -1,0 +1,34 @@
+{
+  "cosmosPay": {
+    "badge": "Cosmos Pay",
+    "title": "Your payments gateway",
+    "titleAccent": "On Ramp · Off Ramp",
+    "intro": "Convert local currency to crypto and back securely. Pay and receive in USDC, get paid to your bank account. One integrated flow with Cosmos protection on every transaction.",
+    "bullet1": "Local currency deposits and withdrawals",
+    "bullet2": "Automatic USDC ↔ USD/local conversion",
+    "bullet3": "Transparent fees · No surprises",
+    "feeNote": "Standard protection: 1% + AR$0.10 per transaction",
+    "ctaCreateAccount": "Create an account to use Cosmos Pay",
+    "gatewayHero": {
+      "sectionAria": "Cosmos Pay — payments gateway and ramp",
+      "headline": "From local currency to USDC.\nFast, secure, Cosmos.",
+      "devHint": "To accept payments: API keys, payment links, and docs in the developer console."
+    },
+    "mockup": {
+      "buy": "Buy",
+      "sell": "Sell",
+      "youPay": "You pay",
+      "youSell": "You sell",
+      "youReceive": "You receive",
+      "rateNote": "~1 USDC = {{rate}} {{currency}} · Fee 1% + $0.10",
+      "paymentMethod": "Payment method",
+      "card": "Card",
+      "bankTransfer": "Bank transfer",
+      "ctaBuyUsdc": "Buy USDC",
+      "ctaSellUsdc": "Sell USDC",
+      "ctaGoToMyRamp": "Go to my ramp",
+      "protectionIncluded": "Cosmos protection included",
+      "feeShort": "1% + AR$0.10"
+    }
+  }
+}

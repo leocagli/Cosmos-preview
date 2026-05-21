@@ -1,0 +1,305 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-cosmos-bg: var(--cosmos-palette-bg);
+  --color-cosmos-bg-nav: var(--cosmos-palette-bg-nav);
+  --color-cosmos-surface: var(--cosmos-palette-surface);
+  --color-cosmos-surface-elevated: var(--cosmos-palette-surface-elevated);
+  --color-cosmos-surface-hover: var(--cosmos-palette-surface-hover);
+
+  --color-cosmos-text: var(--cosmos-palette-text);
+  --color-cosmos-muted: var(--cosmos-palette-muted);
+
+  --color-cosmos-accent: var(--cosmos-palette-accent);
+  --color-cosmos-accent-hover: var(--cosmos-palette-accent-hover);
+  --color-cosmos-accent-soft: var(--cosmos-palette-accent-soft);
+
+  --color-cosmos-brand-1: var(--cosmos-palette-brand-1);
+  --color-cosmos-brand-2: var(--cosmos-palette-brand-2);
+  --color-cosmos-brand-3: var(--cosmos-palette-brand-3);
+  --color-cosmos-brand-4: var(--cosmos-palette-brand-4);
+  --color-cosmos-brand-5: var(--cosmos-palette-brand-5);
+
+  --color-cosmos-border: var(--cosmos-palette-border);
+  --color-cosmos-border-strong: var(--cosmos-palette-border-strong);
+
+  --color-cosmos-on-accent: #ffffff;
+
+  --color-cosmos-success: var(--cosmos-palette-brand-3);
+  --color-cosmos-success-muted: var(--cosmos-palette-success-muted);
+  --color-cosmos-stat-warm: #f97316;
+  --color-cosmos-stat-warm-soft: var(--cosmos-palette-stat-warm-soft);
+
+  --color-cosmos-stat-label: var(--cosmos-palette-stat-label);
+  --color-cosmos-stat-value: var(--cosmos-palette-stat-value);
+  --color-cosmos-stat-success: var(--cosmos-palette-stat-success);
+  --color-cosmos-stat-avatar-bg: var(--cosmos-palette-stat-avatar-bg);
+  --shadow-cosmos-stat-card: var(--cosmos-palette-stat-shadow);
+
+  --shadow-cosmos-card: var(--cosmos-shadow-card);
+  --shadow-cosmos-card-soft: var(--cosmos-shadow-card-soft);
+  --shadow-cosmos-drop-lg: var(--cosmos-shadow-drop-lg);
+  --shadow-cosmos-nav: var(--cosmos-shadow-nav);
+  --shadow-cosmos-product-inner: var(--cosmos-shadow-product-inner);
+  --shadow-cosmos-depth: var(--cosmos-shadow-depth);
+
+  --color-cosmos-ink: var(--cosmos-palette-slate-900);
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --font-panel: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-panel-display: "Sora", "Plus Jakarta Sans", ui-sans-serif, sans-serif;
+
+  --font-gateway: "General Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 1rem;
+  --radius-button: 0.5rem;
+  --radius-input: 0.5rem;
+}
+
+:root {
+  --cosmos-palette-brand-1: #add7f6;
+  --cosmos-palette-brand-2: #87bfff;
+  --cosmos-palette-brand-3: #3f8efc;
+  --cosmos-palette-brand-4: #2667ff;
+  --cosmos-palette-brand-5: #3b28cc;
+
+  /** Canal RGB del acento (para `rgb(var(--cosmos-palette-accent-ch) / a)` en capas) */
+  --cosmos-palette-accent-ch: 38 103 255;
+  --cosmos-palette-success-ch: 38 103 255;
+  /** Pizarra fija para mocks / tarjetas que deben verse “oscuras” en cualquier tema */
+  --cosmos-palette-slate-900: #0f172a;
+  /** Mismo tono que el texto en tema claro (sombras / bordes sobre superficie clara) */
+  --cosmos-palette-ink-ch: 15 23 42;
+
+  --cosmos-shadow-card: 0 1px 2px rgba(15, 23, 42, 0.05), 0 8px 24px rgba(15, 23, 42, 0.06);
+  --cosmos-shadow-card-soft: 0 1px 2px rgba(15, 23, 42, 0.04), 0 6px 16px rgba(15, 23, 42, 0.04);
+  --cosmos-shadow-drop-lg: 0 8px 30px rgba(0, 0, 0, 0.35);
+  --cosmos-shadow-nav: 0 -6px 20px rgba(0, 0, 0, 0.06);
+  --cosmos-shadow-product-inner: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --cosmos-shadow-depth: 0 20px 50px -24px rgba(0, 0, 0, 0.65);
+  --cosmos-shadow-inset-deep: inset 0 0 30px rgba(0, 0, 0, 0.5);
+  --cosmos-shadow-inset-mid: inset 0 0 56px rgba(0, 0, 0, 0.16);
+  --cosmos-landing-mock-brand-shadow: var(--cosmos-shadow-inset-deep),
+    0 0 150px -10px rgb(var(--cosmos-palette-accent-ch) / 1);
+  --cosmos-landing-mock-dark-shadow: var(--cosmos-shadow-inset-mid),
+    0 0 100px -8px rgb(var(--cosmos-palette-accent-ch) / 0.2);
+
+  --cosmos-palette-bg: #e8ebf0;
+  --cosmos-palette-bg-nav: #e2e6ed;
+  --cosmos-palette-surface: #eef1f6;
+  --cosmos-palette-surface-elevated: #e3e7ef;
+  --cosmos-palette-surface-hover: #d5dae4;
+  --cosmos-palette-text: #0f172a;
+  --cosmos-palette-muted: #64748b;
+  --cosmos-palette-accent: var(--cosmos-palette-brand-4);
+  --cosmos-palette-accent-hover: var(--cosmos-palette-brand-5);
+  --cosmos-palette-accent-soft: rgba(38, 103, 255, 0.12);
+  --cosmos-palette-border: #d1d8e3;
+  --cosmos-palette-border-strong: #b9c2d0;
+  --cosmos-palette-success-muted: rgba(38, 103, 255, 0.14);
+  --cosmos-palette-stat-warm-soft: rgba(249, 115, 22, 0.14);
+  --cosmos-palette-stat-label: #64748b;
+  --cosmos-palette-stat-value: #0f172a;
+  --cosmos-palette-stat-success: #2667ff;
+  --cosmos-palette-stat-avatar-bg: #ea580c;
+  --cosmos-palette-stat-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.06);
+
+  --cosmos-landing-grid-line: rgba(15, 23, 42, 0.07);
+  --cosmos-landing-hero-glow-a: rgba(38, 103, 255, 0.14);
+  --cosmos-landing-hero-glow-b: rgba(15, 23, 42, 0.05);
+  --cosmos-landing-vignette-1: rgba(15, 23, 42, 0.1);
+  --cosmos-landing-vignette-2: rgba(15, 23, 42, 0.05);
+  --cosmos-landing-vignette-3: rgba(15, 23, 42, 0.02);
+}
+
+.dark {
+  --cosmos-palette-accent-ch: 63 142 252;
+
+  /** Alineado con el hero Cosmos Pay (violeta / negro), no gris neutro */
+  --cosmos-palette-bg: #0c0614;
+  --cosmos-palette-bg-nav: #080510;
+  --cosmos-palette-surface: #14101e;
+  --cosmos-palette-surface-elevated: #1c1628;
+  --cosmos-palette-surface-hover: #252032;
+  --cosmos-palette-text: #fafafa;
+  --cosmos-palette-muted: #a39ebb;
+  --cosmos-palette-accent: var(--cosmos-palette-brand-3);
+  --cosmos-palette-accent-hover: var(--cosmos-palette-brand-5);
+  --cosmos-palette-accent-soft: rgba(63, 142, 252, 0.22);
+  --cosmos-palette-border: #2a2438;
+  --cosmos-palette-border-strong: #3d3550;
+  --cosmos-palette-success-muted: rgba(63, 142, 252, 0.2);
+  --cosmos-palette-stat-warm-soft: rgba(249, 115, 22, 0.22);
+  --cosmos-palette-stat-label: #a1a1aa;
+  --cosmos-palette-stat-value: #fafafa;
+  --cosmos-palette-stat-success: #87bfff;
+  --cosmos-palette-stat-avatar-bg: #c2410c;
+  --cosmos-palette-stat-shadow: 0 1px 3px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  --cosmos-landing-grid-line: rgba(255, 255, 255, 0.04);
+  --cosmos-landing-hero-glow-a: rgba(63, 142, 252, 0.24);
+  --cosmos-landing-hero-glow-b: rgba(255, 255, 255, 0.06);
+  --cosmos-landing-vignette-1: rgba(0, 0, 0, 0.4);
+  --cosmos-landing-vignette-2: rgba(0, 0, 0, 0.2);
+  --cosmos-landing-vignette-3: rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  /**
+   * Selects nativos: alinear esquema de color con el tema y forzar fondo/texto en <option>
+   * (evita listas claras con texto claro u oscuro ilegible al elegir país, etc.).
+   */
+  :root select {
+    color-scheme: light;
+  }
+  .dark select {
+    color-scheme: dark;
+  }
+  select option {
+    background-color: var(--cosmos-palette-surface);
+    color: var(--cosmos-palette-text);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-cosmos-text bg-cosmos-bg antialiased;
+  }
+  #root {
+    @apply min-h-screen flex flex-col;
+  }
+  a:hover {
+    @apply text-cosmos-accent;
+  }
+  button:not(:disabled) {
+    cursor: pointer;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease, transform 0.15s ease;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@layer base {
+  /** Web3 Gateway Pasarel landing hero (General Sans, Fontshare) */
+  .gateway-hero {
+    font-family: var(--font-gateway);
+  }
+
+  /**
+   * Fondo de app (header + contenido + footer, fuera del landing):
+   * acento radial suave para alinear con la marca sin competir con el contenido.
+   */
+  .cosmos-app-chrome {
+    background-color: var(--cosmos-palette-bg);
+    background-image:
+      radial-gradient(ellipse 130% 65% at 50% -18%, rgb(var(--cosmos-palette-accent-ch) / 0.08) 0%, transparent 55%),
+      radial-gradient(ellipse 85% 55% at 100% 0%, rgb(var(--cosmos-palette-accent-ch) / 0.05) 0%, transparent 48%);
+  }
+  /** Misma familia cromática que Web3GatewayHero (violeta + acento azul) */
+  .dark .cosmos-app-chrome {
+    background-image:
+      radial-gradient(ellipse 100% 75% at 50% -25%, rgb(139 92 246 / 0.14) 0%, transparent 58%),
+      radial-gradient(ellipse 70% 55% at 100% 0%, rgb(192 38 211 / 0.07) 0%, transparent 50%),
+      radial-gradient(ellipse 130% 65% at 50% -18%, rgb(var(--cosmos-palette-accent-ch) / 0.12) 0%, transparent 55%),
+      radial-gradient(ellipse 85% 55% at 100% 0%, rgb(var(--cosmos-palette-accent-ch) / 0.07) 0%, transparent 48%);
+  }
+
+  /**
+   * Login / registro: paleta y brillo de fondo más contenidos que el resto de la app.
+   */
+  .auth-app-chrome {
+    --cosmos-palette-bg: #e8e8e8;
+    --cosmos-palette-bg-nav: #e3e3e3;
+    --cosmos-palette-surface: #eeeeee;
+    --cosmos-palette-surface-elevated: #e0e0e0;
+    --cosmos-palette-surface-hover: #d6d6d6;
+    --cosmos-palette-border: #b8b8b8;
+    --cosmos-palette-border-strong: #9c9c9c;
+    --cosmos-palette-muted: #3a3a3a;
+  }
+
+  /** En oscuro, login/registro usan la misma paleta que el resto (landing / panel). */
+  .auth-app-chrome.cosmos-app-chrome {
+    background-image:
+      radial-gradient(ellipse 130% 65% at 50% -18%, rgb(var(--cosmos-palette-accent-ch) / 0.055) 0%, transparent 55%),
+      radial-gradient(ellipse 85% 55% at 100% 0%, rgb(var(--cosmos-palette-accent-ch) / 0.035) 0%, transparent 48%);
+  }
+
+  .dark .auth-app-chrome.cosmos-app-chrome {
+    background-image:
+      radial-gradient(ellipse 100% 75% at 50% -25%, rgb(139 92 246 / 0.12) 0%, transparent 58%),
+      radial-gradient(ellipse 70% 55% at 100% 0%, rgb(192 38 211 / 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse 130% 65% at 50% -18%, rgb(var(--cosmos-palette-accent-ch) / 0.1) 0%, transparent 55%),
+      radial-gradient(ellipse 85% 55% at 100% 0%, rgb(var(--cosmos-palette-accent-ch) / 0.06) 0%, transparent 48%);
+  }
+
+  /**
+   * Panel desarrolladores Cosmos Pay: fondos más profundos (misma línea que auth).
+   * Los hijos usan bg-cosmos-surface / border-cosmos-border y heredan estos tokens.
+   */
+  .dark .cosmos-dev-panel {
+    --cosmos-palette-bg: #050308;
+    --cosmos-palette-surface: #0a0810;
+    --cosmos-palette-surface-elevated: #110e18;
+    --cosmos-palette-surface-hover: #17141f;
+    --cosmos-palette-border: #1c1626;
+    --cosmos-palette-border-strong: #2a2234;
+  }
+
+  .dark .cosmos-dev-panel.cosmos-app-chrome {
+    background-image:
+      radial-gradient(ellipse 100% 75% at 50% -25%, rgb(139 92 246 / 0.09) 0%, transparent 58%),
+      radial-gradient(ellipse 70% 55% at 100% 0%, rgb(192 38 211 / 0.045) 0%, transparent 50%),
+      radial-gradient(ellipse 130% 65% at 50% -18%, rgb(var(--cosmos-palette-accent-ch) / 0.09) 0%, transparent 55%),
+      radial-gradient(ellipse 85% 55% at 100% 0%, rgb(var(--cosmos-palette-accent-ch) / 0.05) 0%, transparent 48%);
+  }
+
+  /** Tipografía del panel (/panel, retailer, proveedores con RoleSidebarLayout) */
+  .cosmos-panel-typography {
+    font-family: var(--font-panel);
+  }
+  .cosmos-panel-typography .font-display {
+    font-family: var(--font-panel-display);
+  }
+}
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+  }
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+  }
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-glow {
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+  .bg-gradient-animated {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  @keyframes skeleton-shimmer {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  .skeleton-shimmer {
+    animation: skeleton-shimmer 1.5s ease-in-out infinite;
+  }
+}
