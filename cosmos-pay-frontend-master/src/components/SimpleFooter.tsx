@@ -5,6 +5,7 @@ import { useTheme } from "../context/ThemeContext";
 
 const PANEL_COSMOS_PAY = "/panel/developers/cosmos-pay";
 const PUBLIC_DOCS = "/docs/cosmos-pay";
+const SITE_URL = "https://cosmos.cloudycoding.com/";
 
 type SimpleFooterProps = {
   /** Alineado con el landing Cosmos Pay (violeta / General Sans). */
@@ -51,6 +52,14 @@ export function SimpleFooter({ variant = "default" }: SimpleFooterProps) {
               >
                 {t("cosmosPayDev.navDocs")}
               </Link>
+              <a
+                href={SITE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 no-underline transition-colors duration-200 hover:!text-white"
+              >
+                {t("layout.footer.website")}
+              </a>
             </nav>
           </div>
 
@@ -76,6 +85,14 @@ export function SimpleFooter({ variant = "default" }: SimpleFooterProps) {
           >
             {t("cosmosPayDev.consoleTitle")}
           </Link>
+          <a
+            href={SITE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit text-sm font-medium text-cosmos-muted transition-colors hover:text-cosmos-accent"
+          >
+            {t("layout.footer.website")}
+          </a>
           <p className="m-0 text-xs text-cosmos-muted/90">{t("layout.footer.rights", { year })}</p>
         </div>
       </div>
