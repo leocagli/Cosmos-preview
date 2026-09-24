@@ -34,7 +34,7 @@ Previsto a partir de la tienda, el carrito vacío, el copy de protección y la r
 1. El header ofrece búsqueda (“Encuentra el producto que estás buscando...”), “Comprar” hacia `/tienda`, “Ver tienda” hacia `/tienda` y “Categorías”. También muestra “Enviar a / Ingresar ubicación”; en la observación no había una dirección cargada y el control no se completó.
 2. `/tienda` titula “Explora productos”. Copy: “Compra con confianza. Todos los productos cuentan con protección Cosmos.” Migas: Inicio / Tienda. Controles: “Buscar productos, marcas o vendedores”, “Filtros” y orden con “Relevancia” por defecto.
 3. Elegir un producto y abrir su ficha. No hubo tarjetas, así que no apareció una URL de detalle.
-4. Sumar al carrito (`/carrito`). Estado observado: “Tu carrito está vacío”, “Agregá productos desde la tienda para continuar”, CTA “Ir a la tienda” hacia `/tienda`.
+4. Sumar al carrito (`/carrito`). Estado observado: “Tu carrito está vacío”, “Agregá productos desde la tienda para continuar”, botón “Ir a la tienda” hacia `/tienda`.
 5. Continuar a `/checkout`. La ruta está en el bundle. No se abrió una pantalla de checkout.
 6. Según la landing y `/como-funciona`, el checkout elige el flujo de custodia o protección. Cosmos retiene el dinero mientras el pedido avanza bajo las reglas de esa protección.
 7. El pago corre por Cosmos Pay, en moneda local o USDC, con la comisión de landing de 1% + US$ 0,10. Esa cifra no reapareció dentro de un pago.
@@ -63,7 +63,7 @@ Este camino tiene pasos escritos en una página pública.
 4. El retailer busca el catálogo del proveedor, elige productos y los publica en su tienda. El copy dice que no hace falta capital inicial ni comprar stock.
 5. El proveedor envía directo al cliente. El retailer cobra la diferencia, su margen.
 6. El comprador paga a Cosmos. Cuando el comprador recibe el producto, el retailer cobra. La protección se describe como cobertura frente al impago.
-7. Sin cuenta, “Crear cuenta” va a `/onboard?role=retailer`. Con cuenta, el CTA “Ya tengo cuenta” sigue con “Ir a mi tienda” y va a `/retailer`. “Cómo funciona la protección” va a `/como-funciona`.
+7. Sin cuenta, “Crear cuenta” va a `/onboard?role=retailer`. Con cuenta, el botón “Ya tengo cuenta” sigue con “Ir a mi tienda” y va a `/retailer`. “Cómo funciona la protección” va a `/como-funciona`.
 8. El bundle prevé el área retailer en `/retailer`, `/retailer/proveedores`, `/retailer/tiendas` y `/retailer/ventas`. Esas pantallas no se abrieron.
 
 ### Proveedor
@@ -139,7 +139,7 @@ Header observado: ubicación (“Enviar a / Ingresar ubicación”), Categorías
 - El alta queda en el paso 1 de 3. El login se vio, sin credenciales. Google y “Conectar wallet Stellar” están visibles. Freighter no está en ese login.
 - La wallet de Cosmos Pay muestra su landing (v1.8.0), sin crear ni desbloquear.
 - `/como-funciona` y `/cosmos-pay` se abrieron como páginas informativas.
-- `/cosmos-founding` está enlazada. Durante la investigación la pestaña activa saltaba a X, así que el contenido de esa ruta no quedó registrado. La misma interferencia impidió un click-through estable de ubicación, categorías, idioma, tema, el modal de conectar wallet y algunos CTA, y también impidió leer la respuesta de `/nonexistent`.
+- `/cosmos-founding` está enlazada. Durante la investigación la pestaña activa saltaba a X, así que el contenido de esa ruta no quedó registrado. La misma interferencia impidió un recorrido estable de ubicación, categorías, idioma, tema, el modal de conectar wallet y algunos botones, y también impidió leer la respuesta de `/nonexistent`.
 - No hubo pago, compra, KYC ni movimiento de fondos.
 
 ## 7. Huecos de UX y producto
